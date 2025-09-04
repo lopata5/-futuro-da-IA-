@@ -3,4 +3,13 @@
     --cor-principal: #f0f1f5;
     --cor-secundaria:#212333;
     --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
+    --cor-texto: #D7F9FF; 
+ }
+    body {  
+     background-color: var(--cor-fundo);
+     color: var(--cor-texto);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+      }   
