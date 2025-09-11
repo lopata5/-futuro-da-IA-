@@ -57,5 +57,5 @@ const perguntas =  [
            mostraPergunta();      
            }
 
-           mostraPerguntas
+           mostraPerguntas();
 
