@@ -1,26 +1,36 @@
-:root { 
-    --cor-fundo: #233fe0;
-    --cor-principal: #f0f1f5;
-    --cor-secundaria:#212333;
-    --cor-destaque: #094955;
-    --cor-texto: #D7F9FF; 
- }
-    body {  
-     background-color: var(--cor-fundo);
-     color: var(--cor-texto);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     min-height: 100vh;
-      }   
+:root {
+    /* Variáveis de Cores */
+    --cor-fundo: #233fe0;      /* Azul principal, escuro */
+    --cor-principal: #f0f1f5;  /* Quase branco/cinza claro, para o conteúdo */
+    --cor-secundaria: #212333; /* Cinza/Azul muito escuro */
+    --cor-destaque: #094955;   /* Azul esverdeado escuro, para títulos/ênfase */
+    --cor-texto: #D7F9FF;      /* Azul muito claro/quase branco, para o texto no fundo */
+}
 
-     .caixa-principal{ 
-      background-color: var(--cor-principal);
-      width: 90%;
-      text-align: center;
-      padding: 20px;
-      
-       }
-      h1{ 
-         color: var(--cor-destaque);
-      }  
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    /* Centraliza o conteúdo (como a .caixa-principal) na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da viewport */
+    margin: 0; /* Boa prática: remove a margem padrão do navegador */
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 800px; /* Adicionado: limita a largura em telas grandes */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Adicionado: cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: Adiciona uma sombra suave */
+    color: var(--cor-secundaria); /* Alterado: Define a cor do texto da caixa com uma cor escura para contraste */
+}
+
+h1 {
+    color: var(--cor-destaque);
+    margin-top: 0; /* Boa prática: remove margem superior padrão que pode causar problemas de espaçamento */
+    font-size: 2.5em; /* Aumenta um pouco o tamanho do título para destaque */
+}
